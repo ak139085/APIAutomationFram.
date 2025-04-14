@@ -1,0 +1,28 @@
+{
+	"username": "postman",
+	"password": "password",
+	"endpoint":"users",
+	"languages":[
+		"Java",
+		"Python",
+		"Ruby"
+	],
+	"technology":[
+		"AI",
+		"ML",
+		"DataAnalyst"
+	],
+	"Marks":[
+		1,
+		2,
+		3
+	],
+	"contact": [
+	     "e-mail: ak139086@gmail.com",
+	     "phone: 9848022338",
+	     "city: Varanasi",
+	     "Area: Sarnath",
+	     "State: Uttar Pradesh"
+	  ]
+
+}

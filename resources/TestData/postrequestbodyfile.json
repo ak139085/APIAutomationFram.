@@ -1,0 +1,19 @@
+{
+	"name":"morpheus",
+	"job":"leader",
+	"languages":[
+		"Java",
+		"Python",
+		"Ruby"
+	],
+	"technology":[
+		"AI",
+		"ML",
+		"DataAnalyst"
+	],
+	"Marks":[
+		1,
+		2,
+		3
+	]
+}

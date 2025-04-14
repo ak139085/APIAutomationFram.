@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Regression Suite">
+		<test name="userManagement">
+		<groups>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="userManagement.ergast"/>
+			<class name="userManagement.getuser"/>
+			<class name="userManagement.echopostman"/>
+			<class name="userManagement.jsonplaceholder"/>
+		</classes>
+	</test>
+	</suite>

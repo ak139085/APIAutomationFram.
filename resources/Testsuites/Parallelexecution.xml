@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Automation Session Smoke Suite" parallel="tests" thread-count="2">
+   <test name="Automation Test echo Users">
+       <classes>
+           <class name="userManagement.echopostman"/>
+       </classes>
+   </test>
+   <test name="Automation Test ergast users">
+       <classes>
+           <class name="userManagement.ergast"/>
+       </classes>
+   </test>
+   <test name="Automation Test get users">
+       <classes>
+           <class name="userManagement.getuser"/>
+       </classes>
+   </test>
+   <test name="Automation Test jsonplaceholders users">
+       <classes>
+           <class name="userManagement.jsonplaceholder"/>
+       </classes>
+   </test>
+</suite>

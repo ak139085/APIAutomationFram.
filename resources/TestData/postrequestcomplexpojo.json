@@ -1,0 +1,20 @@
+{
+	"name":"morpheus",
+	"job":"leader",
+	"languages":[
+		"Java",
+		"Python",
+		"Ruby"
+	],
+	"City":[
+		{
+		"name":"Varanasi",
+		"temperature":"34"
+		},
+		{
+		"name":"Kanpur",
+		"temperature":"45"
+		}
+		
+	]
+}
