@@ -25,7 +25,7 @@ import java.util.List;
 import static io.restassured.RestAssured.*;
 
 public class echopostman {
-	
+	String GITToken="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";
 
 	@Test(groups = { "Sanity", "E2E" })
 	public void validateResponseBodyGetBasicAuth() {
