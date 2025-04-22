@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 14 18:36:26 IST 2025</td>
+<td>Started on:</td><td>Sun Apr 20 21:22:45 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2539 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19697 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='userManagement.echopostman.validatePatchWithpojodeserilization()'><b>validatePatchWithpojodeserilization</b><br>Test class: userManagement.echopostman</td>
+<td title='userManagement.echopostman.validatePatchWithpojodeserialization()'><b>validatePatchWithpojodeserialization</b><br>Test class: userManagement.echopostman</td>
 <td><div><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;updatedAt&quot; (class pojo.postrequestpojo), not marked as ignorable (6 known properties: &quot;cityrequestbody&quot;, &quot;name&quot;, &quot;technology&quot;, &quot;job&quot;, &quot;marks&quot;, &quot;languages&quot;])
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 109] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 115] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
 	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
@@ -99,7 +99,7 @@ function toggleAllBoxes() {
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
-	at userManagement.echopostman.validatePatchWithpojodeserilization(echopostman.java:265)
+	at userManagement.echopostman.validatePatchWithpojodeserialization(echopostman.java:263)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -127,7 +127,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;updatedAt&quot; (class pojo.postrequestpojo), not marked as ignorable (6 known properties: &quot;cityrequestbody&quot;, &quot;name&quot;, &quot;technology&quot;, &quot;job&quot;, &quot;marks&quot;, &quot;languages&quot;])
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 109] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 115] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
 	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
 	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
 	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2241)
@@ -140,9 +140,9 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
 	... 47 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1592415783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1592415783'><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;updatedAt&quot; (class pojo.postrequestpojo), not marked as ignorable (6 known properties: &quot;cityrequestbody&quot;, &quot;name&quot;, &quot;technology&quot;, &quot;job&quot;, &quot;marks&quot;, &quot;languages&quot;])
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 109] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
+</pre></div><a href='#' onClick='toggleBox("stack-trace953191605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace953191605'><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;updatedAt&quot; (class pojo.postrequestpojo), not marked as ignorable (6 known properties: &quot;cityrequestbody&quot;, &quot;name&quot;, &quot;technology&quot;, &quot;job&quot;, &quot;marks&quot;, &quot;languages&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 115] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
 	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
@@ -164,7 +164,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
-	at userManagement.echopostman.validatePatchWithpojodeserilization(echopostman.java:265)
+	at userManagement.echopostman.validatePatchWithpojodeserialization(echopostman.java:263)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -192,7 +192,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;updatedAt&quot; (class pojo.postrequestpojo), not marked as ignorable (6 known properties: &quot;cityrequestbody&quot;, &quot;name&quot;, &quot;technology&quot;, &quot;job&quot;, &quot;marks&quot;, &quot;languages&quot;])
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 109] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 115] (through reference chain: pojo.postrequestpojo[&quot;updatedAt&quot;])
 	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
 	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
 	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2241)
@@ -206,8 +206,96 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
 	... 47 more
 </pre></div></td>
-<td>2</td>
-<td>userManagement.echopostman@20deea7f</td></tr>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='userManagement.echopostman.validatePutWithString()'><b>validatePutWithString</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validateResponseBodyGetBasicAuth()'><b>validateResponseBodyGetBasicAuth</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>1</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.Test2()'><b>Test2</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePostWithpojo()'><b>validatePostWithpojo</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePatchWithpojo()'><b>validatePatchWithpojo</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePatchWithString()'><b>validatePatchWithString</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePutWithpojo()'><b>validatePutWithpojo</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validateResponseBodyGetDigestAuth()'><b>validateResponseBodyGetDigestAuth</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>1</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePutWithjsonfile()'><b>validatePutWithjsonfile</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.readdatafromjsonreaderfile()'><b>readdatafromjsonreaderfile</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>10</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.Test1()'><b>Test1</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePostWithString()'><b>validatePostWithString</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePatchWithjsonfile()'><b>validatePatchWithjsonfile</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePostWithjsonfile()'><b>validatePostWithjsonfile</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.Test()'><b>Test</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
+<tr>
+<td title='userManagement.echopostman.validatePostWithcomplexpojo()'><b>validatePostWithcomplexpojo</b><br>Test class: userManagement.echopostman</td>
+<td></td>
+<td>0</td>
+<td>userManagement.echopostman@6a192cfe</td></tr>
 </table><p>
 </body>
 </html>

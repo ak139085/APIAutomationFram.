@@ -5,7 +5,7 @@
     <classes>
       <class name="userManagement.echopostman">
         <methods>
-          <include name="validatePatchWithpojodeserilization"/>
+          <include name="validatePatchWithpojodeserialization"/>
         </methods>
       </class> <!-- userManagement.echopostman -->
     </classes>

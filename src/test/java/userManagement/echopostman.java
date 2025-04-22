@@ -25,7 +25,7 @@ import java.util.List;
 import static io.restassured.RestAssured.*;
 
 public class echopostman {
-	@Test(groups = { "Sanity", "E2E", "Regression" })
+	@Test(groups = { "Sanity", "E2E" })
 	public void validateResponseBodyGetBasicAuth() {
 
 		Response resp = given().auth().basic("postman", "password").when().get("https://postman-echo.com/basic-auth"); // RestAssured
