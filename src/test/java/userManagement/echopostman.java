@@ -215,7 +215,7 @@ public class echopostman {
 		System.out.println(response.getBody().asString());
 	}
 
-	@Test
+	@Test(description="Changes in master")
 	public void validatePostWithcomplexpojo() {
 		List<String> postlang = new ArrayList<>();
 
