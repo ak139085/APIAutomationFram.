@@ -8,6 +8,7 @@ import core.Statuscode;
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import utils.PropertiesReader;
 import utils.SoftAssertionutilSingletonpattern;
@@ -26,7 +27,7 @@ import static io.restassured.RestAssured.*;
 
 public class getuser {
 
-	@Test(groups= {"Sanity","E2E"})
+	@Test(groups = { "Sanity", "E2E" })
 	public void getuserdata() {
 
 		given().when().get("https://reqres.in/api/users?page=2").then().assertThat().statusCode(200);
@@ -39,7 +40,7 @@ public class getuser {
 		RestAssured.baseURI = "https://reqres.in/api";
 	}
 
-	@Test(groups= {"Regression","E2E"})
+	@Test(groups = { "Regression", "E2E" })
 	public void testGetUsersWithQueryParameters() {
 		Response response = given().queryParam("page", 2).when().get("/users").then().statusCode(200).extract()
 				.response();
@@ -55,7 +56,7 @@ public class getuser {
 		response.then().body("data[0].avatar", is("https://reqres.in/img/faces/7-image.jpg"));
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void validateStatusCodeGetUser() {
 
 		System.out.println("*****************");
@@ -65,14 +66,14 @@ public class getuser {
 		assertEquals(actualStatusCode, 200); // Testng
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void testGetUsersWithMultipleQueryParams() {
 
 		given().queryParam("page", 2).queryParam("per_page", 3).queryParam("rtqsdr", 4).when()
 				.get("https://reqres.in/api/users").then().statusCode(200).extract().response();
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void testCreateUserWithFormParam() {
 		Response response = given().contentType("application/x-www-form-urlencoded").formParam("name", "John Doe")
 				.formParam("job", "Developer").when().post("https://reqres.in/api/users").then().statusCode(201)
@@ -83,14 +84,14 @@ public class getuser {
 		response.then().body("job", is("Developer"));
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void testGetUserListWithHeader() {
 		given().header("Content-Type", "application/json").when().get("https://reqres.in/api/users?page=2").then()
 				.statusCode(200);
 		System.out.println("testGetUserListWithHeader Executed Successfully");
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void testWithTwoHeaders() {
 		given().header("Authorization", "bearer ywtefdu13tx4fdub1t3ygdxuy3gnx1iuwdheni1u3y4gfuy1t3bx")
 				.header("Content-Type", "application/json").when().get("https://reqres.in/api/users?page=2").then()
@@ -98,7 +99,7 @@ public class getuser {
 		System.out.println("testWithTwoHeaders Executed Successfully");
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void testGetUserListusingMap() {
 		// Set base URI for the API
 		RestAssured.baseURI = "https://reqres.in/api";
@@ -112,7 +113,7 @@ public class getuser {
 		given().headers(headers).when().get("/users?page=2").then().statusCode(200);
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void testFetchHeadersfromresponseandvalidate() {
 		Response response = given().when().get("https://reqres.in/api/users?page=2").then().extract().response();
 
@@ -127,7 +128,7 @@ public class getuser {
 		}
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void verifyStatusCodeDelete() {
 
 		Response resp = given().delete("https://reqres.in/api/users/2");
@@ -136,7 +137,7 @@ public class getuser {
 
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void readdatafromjsonreaderfile() throws IOException, ParseException {
 		Response resp = given().auth().basic(jsonReader.getTestData("username"), jsonReader.getTestData("password"))
 				.when().get("https://postman-echo.com/basic-auth"); // RestAssured
@@ -146,7 +147,7 @@ public class getuser {
 		System.out.println("readdatafromjsonreaderfile run successfully");
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void readdatafrompropertiesfile() {
 		String serveraddress = PropertiesReader.readproperty();
 
@@ -158,7 +159,7 @@ public class getuser {
 		System.out.println("readdatafrompropertiesreaderfile run successfully");
 	}
 
-	@Test(groups= {"Sanity", "Regression","E2E"})
+	@Test(groups = { "Sanity", "Regression", "E2E" })
 	public void validateFromPropertiesandTestData() throws IOException, ParseException {
 		String serveraddress = PropertiesReader.readproperty();
 		String endpoint = jsonReader.getTestData("endpoint");
@@ -170,23 +171,31 @@ public class getuser {
 		System.out.println("validateFromProperties_TestData executed successfully" + URL);
 
 	}
-	
+
 	@Test
-    public void validateWithSoftAssertUtil() {
-        RestAssured.baseURI = "https://reqres.in/api";
-        Response response = given()
-                .queryParam("page", 2)
-                .when()
-                .get("/users")
-                .then()
-                .statusCode(200)
-                .extract()
-                .response();
+	public void validateWithSoftAssertUtil() {
+		RestAssured.baseURI = "https://reqres.in/api";
+		Response response = given().queryParam("page", 2).when().get("/users").then().statusCode(200).extract()
+				.response();
 
-        SoftAssertionutilSingletonpattern.assertEquals(response.getStatusCode(), Statuscode.SUCCESS.code, "Status code is not 200");
-        SoftAssertionutilSingletonpattern.assertAll();
-        System.out.println("validateWithSoftAssertUtil executed successfully");
-    }
+		SoftAssertionutilSingletonpattern.assertEquals(response.getStatusCode(), Statuscode.SUCCESS.code,
+				"Status code is not 200");
+		SoftAssertionutilSingletonpattern.assertAll();
+		System.out.println("validateWithSoftAssertUtil executed successfully");
+	}
 
+	@Test(groups= {"Sanity","E2E"})
+	public void getuserdata1() {
+
+		String data=given().when().get("https://jsonplaceholder.typicode.com/todos/1").body().asString();
+		
+		//System.out.println(data.body().asString());
+		
+		
+		JsonPath path =new JsonPath(data);
+		
+		System.out.println(path.getString("title"));
+
+	}
 
 }

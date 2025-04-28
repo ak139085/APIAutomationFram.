@@ -4,9 +4,6 @@ import org.apache.commons.io.IOUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
-
-
 import core.Statuscode;
 import io.restassured.response.Response;
 import pojo.Cityrequest;

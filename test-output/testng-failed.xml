@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="userManagement.echopostman">
+      <class name="userManagement.getuser">
         <methods>
-          <include name="validatePatchWithpojodeserialization"/>
+          <include name="validateWithSoftAssertUtil"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- userManagement.echopostman -->
+      </class> <!-- userManagement.getuser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
